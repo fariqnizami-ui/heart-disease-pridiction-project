@@ -1,3 +1,11 @@
+import streamlit as st
+import joblib
+import pandas as pd
+
+# Now you can use st.
+st.title("Heart Disease Prediction")
+age = st.number_input("Age", value=25)
+# ... the rest of your code
 # 1. Collect all inputs (matching your training columns)
 age = st.number_input("Age", value=25)
 sex = st.selectbox("Sex (1=M, 0=F)", [1, 0])
